@@ -49,7 +49,7 @@
     </style>
 </head>
 <body>
-    <%@include file="/Compt/NavBar.jsp" %>  
+    <%@include file="/Compt/NavTeacher.jsp" %>  
     <div class="container">
         <div class="card" style="width: 18rem;">
             <img src="/img/close-up-person-holding-smartphone.jpg" class="card-img-top" alt="Courses">
@@ -67,7 +67,7 @@
             <div class="card-body">
                 <h5 class="card-title"></h5>
                 <div class="btn-container">
-                    <form action="ManageCourses.jsp" method="get">
+                    <form action="/viewCourse" method="get">
                         <button type="submit" class="btn btn-primary">Manage Courses</button>
                     </form>
                 </div>
@@ -86,7 +86,6 @@
         </div>
     </div>
 
-    <!-- Bootstrap JS and dependencies -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

@@ -58,7 +58,7 @@
     <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
       <div class="navbar-nav">
         <a class="nav-link active" aria-current="page" href="Home.jsp"><i class="fas fa-home"></i> Home</a>
-        <a class="nav-link" href="Register.jsp"><i class="fas fa-user-plus"></i> Register</a>
+        
         <a class="nav-link" href="Login.jsp"><i class="fas fa-sign-in-alt"></i> Login</a>
         <a class="nav-link" href="AboutUs.jsp"><i class="fas fa-chart-line"></i> About Us</a>
       </div>

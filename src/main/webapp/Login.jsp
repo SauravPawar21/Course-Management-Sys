@@ -67,7 +67,7 @@
         }
 
         button:hover {
-             background-color: #7fffd4;
+             background-color: #0bbd2c;
         }
 
         .reg {
@@ -84,17 +84,17 @@
     </style>
 </head>
 <body>
-    <%@include file="/Compt/NavBar.jsp" %>
+    <%@include file="/Compt/NavLog.jsp" %>
     <div class="container">
         <h2>Login</h2>
         <div class="login-form"> <!-- Added a new class for the form container -->
             <form action="/Login" method="post">
                 <label for="username">Username:</label>
                 <input type="text" id="username" name="username" required>
-                <br><br>
+                <br>
                 <label for="password">Password:</label>
                 <input type="password" id="password" name="password" required>
-                <br><br>
+                <br>
                 <label for="role">Role:</label>
                 <select id="role" name="role">
                     <option value="teacher">Teacher</option>

@@ -5,7 +5,7 @@
 <head>
     <meta charset="ISO-8859-1">
     <title>Add Courses</title>
-   <link rel="icon" href="/img/online-course_10180838.png" type="image/x-icon" />
+    <link rel="icon" href="/img/online-course_10180838.png" type="image/x-icon" />
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -15,14 +15,14 @@
         }
 
         .container {
-             width: -60%; 
-            margin: 10px auto;
+            width: 60%;
+            margin: 3px auto;
             background-color: #fff;
             padding: 20px;
             border-radius: 10px;
         }
 
-        .addCourses{
+        .addCourses {
             width: 40%; 
             margin: 25px auto;
             background-color: #fff;
@@ -75,7 +75,7 @@
     </style>
 </head>
 <body>
-    <%@include file="/Compt/NavBar.jsp" %>
+    <%@include file="/Compt/NavAddCourse.jsp" %>
     <div class="container">
         <div class="addCourses">
             <form action="addCourse" method="post" enctype="multipart/form-data">

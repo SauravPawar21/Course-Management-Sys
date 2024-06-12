@@ -13,35 +13,37 @@
             background-color: #f4f4f4;
         }
         form {
-            max-width: 600px; 
+            max-width: 600px;
             margin: 50px auto;
             background: #ffffff;
             padding: 20px;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
-            display: flex; 
+            display: flex;
+            flex-wrap: wrap; /* Ensure proper wrapping on smaller screens */
         }
         .course-image-container {
-            flex: 1; 
-            padding-right: 20px; 
+            flex: 1;
+            padding-right: 20px;
             margin-top: 27px;
             border-radius: 5px;
         }
         .course-details {
-            flex: 2; 
+            flex: 2;
         }
         .course-image {
-            max-width: 100%; 
-            height: auto; 
+            max-width: 100%;
+            height: 270px; /* Ensure image height adjusts proportionally */
             margin-bottom: 20px;
-             border-radius: 5px;
+            border-radius: 5px;
         }
         label {
             display: block;
             margin-bottom: 10px;
         }
-        input[type="text"], textarea {
-            width: calc(100% - 12px);
+        input[type="text"],
+        textarea {
+            width: calc(100% - 16px); /* Adjusted to maintain consistent input width */
             padding: 8px;
             margin-bottom: 10px;
             border: 1px solid #ccc;
@@ -49,7 +51,7 @@
             box-sizing: border-box;
         }
         input[type="submit"] {
-            background: #5ec726; 
+            background: #5ec726;
             color: #ffffff;
             border: none;
             padding: 10px 20px;
@@ -63,24 +65,21 @@
 </head>
 <body>
     
-    <c:if test="${not empty course}">
-        <form action="/edit/${course.id}" method="post">
+    <c:if test="${not empty Course}">
+        <form action="/edit/${Course.id}" method="post">
             <div class="course-image-container">
-                <img class="course-image" src="${course.imageUrl}" alt="Course Image">
+                <img class="course-image" src="${Course.imageUrl}" alt="Course Image">
             </div>
             <div class="course-details">
                 <h2>Edit Course Details</h2>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" value="${course.name}">
+                <label for="courseName">Name:</label>
+                <input type="text" id="courseName" name="courseName" value="${Course.courseName}">
                 <br>
                 <label for="description">Description:</label>
-                <textarea id="description" name="description">${course.description}</textarea>
-                <br>
-                <label for="duration">Duration:</label>
-                <input type="text" id="duration" name="duration" value="${course.duration}">
+                <textarea id="courseDesc" name="courseDesc">${Course.courseDesc}</textarea>
                 <br>
                 <label for="price">Price:</label>
-                <input type="text" id="price" name="price" value="${course.price}">
+                <input type="text" id="price" name="price" value="${Course.price}">
                 <br>
                 <input type="submit" value="Update">
             </div>

@@ -10,7 +10,7 @@
 
 <style>
 .navbar {
-    background-color: #777;
+    background-color: #080808;
 }
 
 .navbar-nav .nav-link, .navbar-brand {
@@ -46,7 +46,7 @@
 </head>
 <body>
 <header>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg  bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="Home.jsp">
       <img src="/img/online-course_10180838.png" alt="Courses">
@@ -58,8 +58,7 @@
     <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
       <div class="navbar-nav">
         <a class="nav-link active" aria-current="page" href="Home.jsp"><i class="fas fa-home"></i> Home</a>
-        <a class="nav-link" href="Register.jsp"><i class="fas fa-user-plus"></i> Register</a>
-        <a class="nav-link" href="Login.jsp"><i class="fas fa-sign-in-alt"></i> Login</a>
+        <a class="nav-link" href="Login.jsp"><i class="fas fa-sign-in-alt"></i> LogOut</a>
         <a class="nav-link" href="AboutUs.jsp"><i class="fas fa-chart-line"></i> About Us</a>
       </div>
     </div>

@@ -21,9 +21,9 @@ public class BuyCon {
 	
 	@GetMapping("/viewCart")
     public String viewCart(Model model) {
-        List<Buy> cartItems = Byin.findAll();
-        model.addAttribute("cartItems", cartItems);
-        return "AddcartFetch.jsp";
+        List<Buy> cartCourses = Byin.findAll();
+        model.addAttribute("cartCourses", cartCourses);
+        return "BuyCourses.jsp";
     }
 
     @PostMapping("/addToCart")

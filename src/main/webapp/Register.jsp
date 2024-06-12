@@ -14,7 +14,7 @@
 
         .container {
             width: -60%; 
-            margin: 10px auto;
+            margin: 2px auto;
             background-color: #fff;
             padding: 20px;
             border-radius: 10px;
@@ -22,7 +22,7 @@
         }
 
         .registration-form {
-            width:50%; 
+            width:40%; 
             margin: 25px auto; 
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
             background-color: #fff;
@@ -70,7 +70,7 @@
     </style>
 </head>
 <body>
-    <%@include file="/Compt/NavBar.jsp" %>  
+    <%@include file="/Compt/NavReg.jsp" %>  
     <div class="container">
         <h2>User Registration</h2>
         <div class="registration-form"> 

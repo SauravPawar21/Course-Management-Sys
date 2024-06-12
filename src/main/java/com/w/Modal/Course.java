@@ -9,7 +9,7 @@ import javax.persistence.Id;
 @Entity
 public class Course {
 	  	@Id
-	    @GeneratedValue(strategy = GenerationType.IDENTITY)
+	    @GeneratedValue(strategy = GenerationType.AUTO)
 	  	@Column(name = "id")
 	    private long id;
 	  	@Column(name = "course_name")
@@ -58,8 +58,7 @@ public class Course {
 			this.courseDesc = courseDesc;
 		}
 		public Course() {
-			super();
-			// TODO Auto-generated constructor stub
+			
 		}
 		@Override
 		public String toString() {

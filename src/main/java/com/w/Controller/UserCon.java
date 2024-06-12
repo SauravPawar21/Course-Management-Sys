@@ -49,7 +49,7 @@ public class UserCon {
             if ("teacher".equals(role)) {
                 return "TeachersDashBord.jsp";
             } else if ("student".equals(role)) {
-                return "Courses.jsp";
+                return "redirect:/UserViewCourse";
             }
         }
         return "Login.jsp";
@@ -57,8 +57,8 @@ public class UserCon {
     
     @GetMapping("/UserViewCourse")
     public String userViewBooks(Model model) {
-        List<Course> courseli = courseInfo.findAll();
-        model.addAttribute("uscs", courseli);
+        List<Course> cslist = courseInfo.findAll();
+        model.addAttribute("cslist", cslist);
         return "Courses.jsp";
     }
 }
