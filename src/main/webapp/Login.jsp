@@ -87,7 +87,7 @@
     <%@include file="/Compt/NavLog.jsp" %>
     <div class="container">
         <h2>Login</h2>
-        <div class="login-form"> <!-- Added a new class for the form container -->
+        <div class="login-form"> 
             <form action="/Login" method="post">
                 <label for="username">Username:</label>
                 <input type="text" id="username" name="username" required>

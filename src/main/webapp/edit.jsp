@@ -20,7 +20,7 @@
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
             display: flex;
-            flex-wrap: wrap; /* Ensure proper wrapping on smaller screens */
+            flex-wrap: wrap; 
         }
         .course-image-container {
             flex: 1;
@@ -33,7 +33,7 @@
         }
         .course-image {
             max-width: 100%;
-            height: 270px; /* Ensure image height adjusts proportionally */
+            height: 270px; 
             margin-bottom: 20px;
             border-radius: 5px;
         }
@@ -43,7 +43,7 @@
         }
         input[type="text"],
         textarea {
-            width: calc(100% - 16px); /* Adjusted to maintain consistent input width */
+            width: calc(100% - 16px); 
             padding: 8px;
             margin-bottom: 10px;
             border: 1px solid #ccc;

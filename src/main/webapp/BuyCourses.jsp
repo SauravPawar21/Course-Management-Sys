@@ -32,11 +32,11 @@
         box-shadow: 0 2px 4px rgba(0, 0, 0, 8);
         overflow: hidden;
         position: relative;
-        transition: transform 0.3s ease; /* Added for card hover effect */
+        transition: transform 0.3s ease; 
     }
     .cart-item:hover {
-        transform: translateY(-5px); /* Added for card hover effect */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 8); /* Added for card hover effect */
+        transform: translateY(-5px); 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 8); 
     }
     .item-image {
         width: 100%;

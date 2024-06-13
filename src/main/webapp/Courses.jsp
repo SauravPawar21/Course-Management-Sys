@@ -52,21 +52,21 @@
         border: 1px solid #ccc;
         border-radius: 5px;
         transition: transform 0.3s ease;
-        width: 18rem; /* Added width to match the card size */
-        background-color: white; /* Additional styling */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Additional styling */
+        width: 18rem; 
+        background-color: white; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
     }
 
     .card:hover {
         transform: translateY(-5px);
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Additional styling */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
     }
 
     .card img {
         width: 100%;
         height: 200px;
-        border-radius: 5px 5px 0 0; /* Adjusted border-radius for image */
-        object-fit: cover; /* Ensures image covers the entire space */
+        border-radius: 5px 5px 0 0; 
+        object-fit: cover; 
     }
 
     .card-body {
